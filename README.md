@@ -1,5 +1,5 @@
 # philosopher-choice
-
+https://elaborate-cat-13a3a3.netlify.app/
 # Søren Kierkegaard Hero Page
 
 This is a simple webpage made with **HTML**, **CSS**, and **JavaScript** that showcases the life and quotes of the philosopher **Søren Kierkegaard**. The page includes animations using **GSAP** and a typing effect to display his quotes one by one.
