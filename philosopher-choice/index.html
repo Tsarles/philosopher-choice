@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Søren Kierkegaard - The Father of Existentialism</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1 class="hero-title">SØREN KIERKEGAARD</h1>
+            <p class="hero-subtitle">The Father of Existentialism</p>
+            <p class="hero-dates">1813 - 1855</p>
+        </div>
+        <div class="scroll-prompt">Scroll to explore his wisdom ↓</div>
+    </section>
+
+    <!-- Quotes Section -->
+    <section class="quotes-section">
+        <h2 class="section-title">Philosophical Insights</h2>
+        <p class="handwritten-intro">Words that shaped existential thought...</p>
+        
+        <div class="animated-quote">
+            <div class="writing-text" id="writingText"></div>
+        </div>
+
+        <div class="quotes-grid">
+            <div class="quote-card" data-modal="anxiety">
+                <div class="card-quote">"Anxiety is the dizziness of freedom."</div>
+                <div class="card-title">The Concept of Anxiety</div>
+                <div class="card-preview">Explore Kierkegaard's groundbreaking analysis of human anxiety and its relationship to freedom and choice...</div>
+            </div>
+
+            <div class="quote-card" data-modal="backwards">
+                <div class="card-quote">"Life can only be understood backwards; but it must be lived forwards."</div>
+                <div class="card-title">The Journals</div>
+                <div class="card-preview">Discover the paradox of human existence and the challenge of living with uncertainty...</div>
+            </div>
+
+            <div class="quote-card" data-modal="despair">
+                <div class="card-quote">"The most common form of despair is not being who you are."</div>
+                <div class="card-title">The Sickness Unto Death</div>
+                <div class="card-preview">Delve into Kierkegaard's profound examination of despair and authentic selfhood...</div>
+            </div>
+
+            <div class="quote-card" data-modal="dare">
+                <div class="card-quote">"To dare is to lose one's footing momentarily. Not to dare is to lose oneself."</div>
+                <div class="card-title">Fear and Trembling</div>
+                <div class="card-preview">Understand the courage required for authentic existence and the leap of faith...</div>
+            </div>
+
+            <div class="quote-card" data-modal="truth">
+                <div class="card-quote">"Truth is subjectivity."</div>
+                <div class="card-title">Concluding Unscientific Postscript</div>
+                <div class="card-preview">Examine Kierkegaard's revolutionary approach to truth and individual experience...</div>
+            </div>
+
+            <div class="quote-card" data-modal="individual">
+                <div class="card-quote">"The crowd is untruth."</div>
+                <div class="card-title">The Point of View</div>
+                <div class="card-preview">Learn about the importance of individual responsibility versus collective thinking...</div>
+            </div>
+
+            <div class="quote-card" data-modal="passion">
+                <div class="card-quote">"The most painful state of being is remembering the future, particularly the one you'll never have."</div>
+                <div class="card-title">Either/Or</div>
+                <div class="card-preview">Explore the aesthetic and ethical stages of existence and their implications...</div>
+            </div>
+
+            <div class="quote-card" data-modal="prayer">
+                <div class="card-quote">"The function of prayer is not to influence God, but rather to change the nature of the one who prays."</div>
+                <div class="card-title">Purity of Heart</div>
+                <div class="card-preview">Discover Kierkegaard's understanding of spiritual transformation and divine relationship...</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modals -->
+    <div class="modal-overlay" id="modal-anxiety">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h3 class="modal-header">The Concept of Anxiety</h3>
+            <p class="modal-quote">"Anxiety is the dizziness of freedom."</p>
+            <div class="modal-explanation">
+                This profound statement captures the essence of human existence in the face of infinite possibilities. Kierkegaard argues that anxiety arises not from external threats, but from our radical freedom to choose who we become.
+            </div>
+            <div class="modal-context">
+                <strong>Context:</strong> Written in 1843, "The Concept of Anxiety" explores how anxiety differs from fear. While fear has an object, anxiety emerges from the vertigo of unlimited possibilities before us. This concept later influenced existentialist thinkers like Sartre and Heidegger.
+            </div>
+            <div class="modal-explanation">
+                When we stand before a cliff, we feel anxiety not because we might fall, but because we might jump. This is the dizziness of our freedom - the overwhelming realization that we are completely responsible for our choices and their consequences.
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="modal-backwards">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h3 class="modal-header">Living Forward, Understanding Backward</h3>
+            <p class="modal-quote">"Life can only be understood backwards; but it must be lived forwards."</p>
+            <div class="modal-explanation">
+                This paradox highlights the fundamental tension of human existence. We can only make sense of our lives by looking back and connecting the dots, yet we must make decisions and live our lives moving forward into an uncertain future.
+            </div>
+            <div class="modal-context">
+                <strong>Context:</strong> From Kierkegaard's journals in 1843, this observation reflects his own struggle with understanding his life's purpose and the meaning of his experiences, particularly his broken engagement to Regine Olsen.
+            </div>
+            <div class="modal-explanation">
+                The quote emphasizes that understanding comes through reflection and hindsight, but life requires us to act without complete knowledge. We must embrace uncertainty and make choices based on incomplete information, trusting that meaning will emerge through lived experience.
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="modal-despair">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h3 class="modal-header">The Sickness Unto Death</h3>
+            <p class="modal-quote">"The most common form of despair is not being who you are."</p>
+            <div class="modal-explanation">
+                Kierkegaard identifies despair as a spiritual sickness that affects the self's relationship with itself. The most tragic form occurs when people live inauthentically, conforming to others' expectations rather than becoming their true selves.
+            </div>
+            <div class="modal-context">
+                <strong>Context:</strong> From "The Sickness Unto Death" (1849), Kierkegaard's analysis of despair as a fundamental human condition. He argues that despair is actually a privilege of humans, as it indicates our spiritual nature and capacity for self-awareness.
+            </div>
+            <div class="modal-explanation">
+                This form of despair is particularly insidious because it often appears as success or contentment. People may achieve social recognition while living completely false lives, never becoming who they truly are. The cure requires the courage to face oneself honestly and choose authentic existence.
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="modal-dare">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h3 class="modal-header">The Courage to Be</h3>
+            <p class="modal-quote">"To dare is to lose one's footing momentarily. Not to dare is to lose oneself."</p>
+            <div class="modal-explanation">
+                This quote emphasizes the necessity of taking risks in life. While daring may cause temporary instability or uncertainty, failing to dare results in the complete loss of one's authentic self and potential.
+            </div>
+            <div class="modal-context">
+                <strong>Context:</strong> This wisdom emerges from Kierkegaard's exploration of faith and the "leap" required for authentic existence. He understood that meaningful life requires risk-taking and the willingness to venture into the unknown.
+            </div>
+            <div class="modal-explanation">
+                The temporary loss of footing when we dare represents the discomfort of growth and change. However, this momentary instability is preferable to the permanent loss of self that comes from playing it safe and never truly living. Authentic existence requires the courage to risk everything for the possibility of becoming who we're meant to be.
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="modal-truth">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h3 class="modal-header">Subjective Truth</h3>
+            <p class="modal-quote">"Truth is subjectivity."</p>
+            <div class="modal-explanation">
+                Kierkegaard revolutionized the concept of truth by arguing that the most important truths are not objective facts but subjective experiences. What matters is not just what you know, but how you exist in relation to what you know.
+            </div>
+            <div class="modal-context">
+                <strong>Context:</strong> From "Concluding Unscientific Postscript" (1846), this concept challenges the dominant philosophical tradition that sought objective, universal truths. Kierkegaard argued that the most crucial truths about existence, meaning, and faith are inherently personal.
+            </div>
+            <div class="modal-explanation">
+                This doesn't mean truth is relativistic or arbitrary. Rather, it means that some truths can only be known through passionate, personal engagement. The truth of love, for instance, cannot be understood through detached analysis but only through the subjective experience of loving and being loved.
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="modal-individual">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h3 class="modal-header">The Individual vs. The Crowd</h3>
+            <p class="modal-quote">"The crowd is untruth."</p>
+            <div class="modal-explanation">
+                Kierkegaard believed that truth and authenticity could only be found in individual existence, not in collective movements or popular opinion. The crowd, no matter how large or seemingly right, cannot determine truth or provide authentic meaning.
+            </div>
+            <div class="modal-context">
+                <strong>Context:</strong> This insight emerged from Kierkegaard's observation of 19th-century society and his critique of both religious institutions and political movements that seemed to diminish individual responsibility and authentic choice.
+            </div>
+            <div class="modal-explanation">
+                The danger of the crowd is that it allows individuals to hide from personal responsibility and authentic decision-making. In the crowd, one can avoid the anxiety of individual choice by simply following others. But this leads to a fundamental loss of self and the possibility of authentic existence.
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="modal-passion">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h3 class="modal-header">Aesthetic Melancholy</h3>
+            <p class="modal-quote">"The most painful state of being is remembering the future, particularly the one you'll never have."</p>
+            <div class="modal-explanation">
+                This poignant observation captures the melancholy of unrealized possibilities and the pain of recognizing paths not taken. It reflects the aesthetic stage of existence, where one is overwhelmed by infinite possibilities without the ability to commit to any single path.
+            </div>
+            <div class="modal-context">
+                <strong>Context:</strong> From "Either/Or" (1843), this represents the voice of the aesthete who lives in the realm of possibility but struggles with the weight of choice and commitment. It reflects Kierkegaard's own experience of melancholy and his complex relationship with his broken engagement.
+            </div>
+            <div class="modal-explanation">
+                The phrase "remembering the future" suggests a backwards-looking anticipation of regret. The aesthetic individual is paralyzed by the fear of choosing wrongly and thus foreclosing other possibilities. This leads to a perpetual state of melancholy and the inability to fully engage with life.
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="modal-prayer">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h3 class="modal-header">The Nature of Prayer</h3>
+            <p class="modal-quote">"The function of prayer is not to influence God, but rather to change the nature of the one who prays."</p>
+            <div class="modal-explanation">
+                Kierkegaard transforms our understanding of prayer from a transactional relationship with God to a transformative spiritual practice. Prayer becomes a means of self-examination and spiritual development rather than a method of requesting divine intervention.
+            </div>
+            <div class="modal-context">
+                <strong>Context:</strong> From "Purity of Heart is to Will One Thing" (1847), this reflects Kierkegaard's deep engagement with Christian spirituality and his emphasis on inward transformation rather than external religious practices.
+            </div>
+            <div class="modal-explanation">
+                True prayer, according to Kierkegaard, is a dialogue with oneself in the presence of God. It strips away pretense and forces honest self-confrontation. Through prayer, one discovers their authentic desires, fears, and spiritual condition, leading to genuine transformation and spiritual growth.
+            </div>
+        </div>
+    </div>
+</body>
+<script src="/assets/js/script.js"></script>
+</html>
